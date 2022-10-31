@@ -16,8 +16,8 @@ def build_argparser():
                         help='Optional. Name of the output files to save.')
     parser.add_argument('--no_show', action='store_true',
                         help="Optional. Don't show output video.")
-    parser.add_argument('--algo', default='haarcascade', choices=('haarcascade', 'mtcnn', 'mediapipe'),
-                        help='Optional. Algorithm for finding faces. Default: haarcascade.')
+    parser.add_argument('--algo', default='mediapipe', choices=('haar_cascade', 'mtcnn', 'mediapipe'),
+                        help='Optional. Algorithm for finding faces. Default: mediapipe.')
     return parser
 
 
